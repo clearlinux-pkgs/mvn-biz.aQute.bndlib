@@ -4,10 +4,12 @@
 #
 Name     : mvn-biz.aQute.bndlib
 Version  : 3.0.0
-Release  : 1
+Release  : 2
 URL      : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
 Source0  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
 Source1  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.pom
+Source2  : https://repo1.maven.org/maven2/biz/aQute/bnd/parent/2.1.0/parent-2.1.0.pom
+Source3  : https://repo1.maven.org/maven2/biz/aQute/bnd/parent/2.3.0/parent-2.3.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
