@@ -4,7 +4,7 @@
 #
 Name     : mvn-biz.aQute.bndlib
 Version  : 3.0.0
-Release  : 2
+Release  : 4
 URL      : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
 Source0  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
 Source1  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.pom
@@ -13,15 +13,43 @@ Source3  : https://repo1.maven.org/maven2/biz/aQute/bnd/parent/2.3.0/parent-2.3.
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
+Requires: mvn-biz.aQute.bndlib-data = %{version}-%{release}
 
 %description
 No detailed description available
+
+%package data
+Summary: data components for the mvn-biz.aQute.bndlib package.
+Group: Data
+
+%description data
+data components for the mvn-biz.aQute.bndlib package.
+
 
 %prep
 
 %build
 
 %install
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
+cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.1.0
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.1.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.3.0
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.3.0
+
 
 %files
 %defattr(-,root,root,-)
+
+%files data
+%defattr(-,root,root,-)
+/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
+/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.pom
+/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.1.0/parent-2.1.0.pom
+/usr/share/java/.m2/repository/biz/aQute/bnd/parent/2.3.0/parent-2.3.0.pom
