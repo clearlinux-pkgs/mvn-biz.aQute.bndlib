@@ -4,10 +4,11 @@
 #
 Name     : mvn-biz.aQute.bndlib
 Version  : 3.0.0
-Release  : 5
+Release  : 6
 URL      : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
 Source0  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
-Source1  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.pom
+Source1  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.jar
+Source2  : https://repo1.maven.org/maven2/biz/aQute/bnd/biz.aQute.bndlib/3.0.0/biz.aQute.bndlib-3.0.0.pom
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : Apache-2.0
@@ -34,6 +35,9 @@ cp %{SOURCE0} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
 cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
+
+mkdir -p %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/biz/aQute/bnd/biz.aQute.bndlib/3.0.0
 
 
 %files
